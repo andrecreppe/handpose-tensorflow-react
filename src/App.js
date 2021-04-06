@@ -1,9 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import * as tf from '@tensorflow/tfjs';
 import * as handpose from '@tensorflow-models/handpose';
 import Webcam from 'react-webcam';
-
+import * as fp from 'fingerpose';
 import { drawHand } from './utilities';
+
+import peace from './images/peace.png'
+import thumbs from './images/thumbs.png'
 import './App.css';
 
 function App() {
@@ -40,9 +43,21 @@ function App() {
       canvasRef.current.width = videoWidth;
       canvasRef.current.height = videoHeight;
 
-      // Detect
+      // Handpose detection
       const hand = await net.estimateHands(video);
       // console.log(hand);
+
+      // Gesture detection
+      if(hand.length > 0) {
+        const GE = new fp.GestureEstimator([
+          fp.Gestures.VictoryGesture,
+          fp.Gestures.ThumbsUpGesture
+        ]);
+
+        const confidence = 8;
+        const gesture = await GE.estimate(hand[0].landmarks, confidence);
+        console.log(gesture);
+      }
 
       // Draw mesh
       const ctx = canvasRef.current.getContext('2d');

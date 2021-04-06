@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# gesture-tensorflow-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Real Time Sign Language Detection App with ReactJS and TensorflowJS.
 
-## Available Scripts
+![Execution example](https://github.com/andrecreppe/handpose-tensorflow-react/blob/main/images/example.png?raw=true)
 
-In the project directory, you can run:
+## 📦 Installation
 
-### `npm start`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In order to run it, is necessary to install all of the used dependencies/packages using npm:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+$ npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+No ordinary installation is also required.
 
-### `npm test`
+## 📐 Developing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to run the application in development mode, start the application using:
 
-### `npm run build`
+```bash
+$ npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once compiled, it should open a new tab at [http://localhost:3000](http://localhost:3000) in the default browser. This page will reload if you edit the code and also warn about any lint errors in the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Custom gestures
+
+For adding other custom gestures, check the [Fingerpose](https://openbase.com/js/fingerpose/documentation) official website and also it's [GitHub page](https://github.com/andypotato/fingerpose/tree/master/src/gestures) for more information in this topic.
+
+## 🚀 Building
+
+Once the application is ready, you can make a build to distribuite it using this command:
+
+```bash
+$ npm run build
+```
+
+It Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📚 Source
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This code was based from the follwing **Nicholas Renotte** tutorials on YouTube:
+- [Real Time AI HAND POSE Estimation with Javascript, Tensorflow.JS and React.JS](https://youtu.be/f7uBsb-0sGQ)
+- [Real Time AI GESTURE RECOGNITION with Tensorflow.JS + React.JS + Fingerpose](https://youtu.be/9MTiQMxTXPE)
